@@ -1,0 +1,237 @@
+/* css reset */
+* {
+    padding: 0%;
+    margin: 0px;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* css variable  */
+:root {
+    --navbar-height: 50px;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* navigation bar: logo and image  */
+.logo {
+    margin: 11px 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin: 5px 20px;
+}
+
+/* navigation bar: list styling  */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: rgb(16, 14, 14);
+}
+
+/* home section  */
+#home {
+    display: flex;
+    height: 402px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../images/image1.jpg')no-repeat center;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+#home h1 {
+    color: rgb(56, 56, 63);
+    text-align: center;
+}
+
+#home p {
+    color: rgb(56, 56, 63);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* service section  */
+#services {
+    margin: 14px 11px;
+    display: flex; 
+}
+
+#services .box {
+    width: 1000px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 3px 25px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: rgb(239, 239, 239);
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    /* it works when your display if block */
+    margin: auto;
+    
+}
+
+#services box p {
+    font-family: 'Ysabeau Infant', sans-serif;
+    
+}
+/* client section  */
+#client-section {
+    height: 324px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../images/imgae3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 200px;
+}
+
+.client item {
+    padding: 34px;
+}
+
+/* contact section  */
+#contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../images/image3.1.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 90%;
+    padding: 0.1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#contact-box .from-group {
+    width: 35%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 2px 20px;
+    text-align: center;
+}
+
+/* utility class  */
+.h-primary {
+    font-size: 2rem;
+    padding: 1px;
+    font-family: 'Ysabeau Infant', sans-serif;
+
+}
+
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Ysabeau Infant', sans-serif;
+
+}
+
+.btn {
+    padding: 5px 20px;
+    margin: 17px 3px;
+    border: 1px solid white;
+    background-color: rgb(110, 121, 110);
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
